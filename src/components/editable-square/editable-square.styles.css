@@ -1,0 +1,16 @@
+.grid-square
+{
+    background-color: coral;
+    color: white;
+}
+
+.solved .grid-square
+{
+    background-color: lightblue;
+    color: white;
+}
+
+.grid-square input{
+    overflow: hidden;
+}
+
