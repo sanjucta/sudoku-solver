@@ -58,8 +58,8 @@ class Puzzle extends Component
 
         const boardCopy = cloneDeep(this.state.board);
         const val = parseInt(value);
-        
-        if(tryVal(boardCopy,row,col,val))
+                  
+        if((val===0)||tryVal(boardCopy,row,col,val))
         {
             
             this.setState((prevState)=>{
