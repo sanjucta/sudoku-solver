@@ -63,6 +63,7 @@ h1,p {
     height: 120px;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
+    opacity: 0.9;
   }
   
   @-webkit-keyframes spin {

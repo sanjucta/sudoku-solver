@@ -79,6 +79,7 @@ class Puzzle extends Component
     render()
     {
         return( 
+            <div>
             <div className={this.state.working?"working":null} >
                 <div className={this.state.solved?"grid solved":"grid"} >
                   {
@@ -105,11 +106,12 @@ class Puzzle extends Component
                 <div className="error">
                     {this.state.entryErr?this.state.msg:''}
                 </div>
-                {
-                    this.state.working ? <div id="loader"></div> : null
-                }
+                
             </div>
-                     
+            {
+                this.state.working ? <div id="loader"></div> : null
+            }
+            </div>         
         )
     }
 
